@@ -1,0 +1,153 @@
+html {
+    background-color: hsl(185, 75%, 39%);
+    box-sizing: border-box;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat,
+    no-repeat;
+    background-size: 80%,
+    95%;
+    background-position: top 175% left -150%,
+    bottom 150% right -1000%;
+    background-color: rgb(25, 161, 173, 0.9);
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/bg-pattern-top.svg"),
+        url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 80%, 95%;
+    background-position: top 15% left -100%, bottom 20% right -850%;
+    background-color: rgb(25, 161, 173, 0.9);
+} */
+
+
+#card {
+    width: 40%;
+    height: auto;
+    margin: 5% auto;
+    padding: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 1px 20px hsl(227, 10%, 46%);
+    border-radius: 20px;
+    z-index: 3;
+}
+
+.top img {
+    width: 100%;
+    z-index: -1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.middle {
+    margin-top: -12%;
+    z-index: 5;
+    background-color: white;
+}
+
+.middle img {
+    border-radius: 100%;
+}
+
+.person {
+    display: inline-flex;
+    margin: auto;
+}
+
+.name {
+    margin: 0px 20px;
+}
+
+.age {
+    margin: 0px 20px;
+    color: hsl(0, 0%, 59%);
+}
+
+hr {
+    filter: brightness(130%);
+    margin: 0px;
+}
+
+.bottom {
+    width: 100%;
+    display: inline-flex;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.followers, .likes, .photos {
+    margin: auto;
+    padding: 5%;
+    z-index: 5;
+}
+.followers p, .likes p, .photos p, h3 {
+    color: hsl(227, 10%, 46%);
+}
+
+.middle, .bottom , figure, .person, .name, .age, .location {
+    background-color: white;
+    z-index: 10;
+}
+
+
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    #card {
+        width: 60%;
+        height: auto;
+        font-size: 1.1rem;
+    }
+    .middle {
+        margin-top: -15%;
+    }
+    .attribution {
+        position: relative;
+        bottom: 0;
+        text-align: center;
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    #card {
+        margin-top: 20%;
+        width: 80%;
+        height: auto;
+        font-size: 1.1rem;
+    }
+
+    .middle {
+        margin-top: -27%;
+    }
+    .attribution {
+        position: relative;
+        bottom: 0;
+        text-align: center;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 300px) {
+    #card {
+        width: 80%;
+    }
+    .person {
+        display: block;
+    }
+    .middle img {
+        margin-top: -30%;
+    }
+    .bottom {
+        display: block;
+    }
+    
+}
